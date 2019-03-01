@@ -5,6 +5,13 @@ function takeANumber(katzDeliLine, name) {
    }
   return `Welcome, ${name}. You are number ${endIdx} in line.`
 }
+let x=0;
+function takeANumber(katzDeliLine) {
+  x++;
+  katzDeliLine.push(x);
+  return `Currently serving ${x}.`;
+}
+
 function nowServing(katzDeliLine) {
   let servingLine=katzDeliLine;
   while(servingLine.length!==0) {
